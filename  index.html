@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Happy Birthday, Sangam 🎀✨ | From Anny 💜</title>
+
+  <meta name="theme-color" content="#6d28d9">
+  <meta property="og:title" content="Happy Birthday, Sangam 🎀✨">
+  <meta property="og:description" content="A dreamy birthday surprise made with love by Anny 💜">
+  <meta property="og:image" content="img/image1.png">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    :root {
+      --purple: #a78bfa;
+      --pink: #f0abfc;
+      --lavender: #ddd6fe;
+      --deep: #160b2e;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: #faf5ff;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #160b2e, #30105b, #4c1d95, #1e103d);
+      background-attachment: fixed;
+    }
+
+    .font-anime {
+      font-family: 'Mochiy Pop One', cursive;
+    }
+
+    .text-sakura {
+      color: #e9d5ff;
+    }
+
+    .bg-navy {
+      background: rgba(35, 14, 65, 0.85);
+      border: 1px solid rgba(221, 214, 254, 0.2);
+      backdrop-filter: blur(12px);
+    }
+
+    .dream-card {
+      background: rgba(255, 255, 255, 0.09);
+      border: 1px solid rgba(233, 213, 255, 0.25);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(12px);
+    }
+
+    .dream-photo {
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+    }
+
+    .dream-photo:hover {
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 12px 30px rgba(192, 132, 252, 0.3);
+    }
+
+    #sakura-canvas {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 40;
+    }
+
+    header video {
+      filter: saturate(0.8);
+    }
+
+    .gallery-photo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    #countdown {
+      color: #f5d0fe;
+      text-shadow: 0 0 18px rgba(216, 180, 254, 0.7);
+    }
+
+    ::selection {
+      background: #c084fc;
+      color: #1e103d;
+    }
+  </style>
+</head>
+
+<body>
+
+<canvas id="sakura-canvas"></canvas>
+
+<!-- SECTION 1: HERO -->
+<header class="min-h-screen h-screen relative flex items-center justify-center text-white overflow-hidden">
+
+  <video autoplay loop muted playsinline
+    class="absolute inset-0 w-full h-full object-cover"
+    style="z-index:0">
+    <source src="img/sa.mp4" type="video/mp4">
+  </video>
+
+  <div class="absolute inset-0"
+    style="background:linear-gradient(135deg,rgba(22,11,46,.75),rgba(76,29,149,.55));z-index:1">
+  </div>
+
+  <div class="text-center relative p-5" style="z-index:2"
+    data-aos="fade-in" data-aos-duration="1500">
+
+    <p class="text-xl md:text-2xl mb-5 text-purple-200">
+      🎀 A little surprise made with love 🎀
+    </p>
+
+    <h1 class="text-4xl md:text-7xl font-anime leading-relaxed"
+      style="text-shadow:0 0 25px rgba(216,180,254,.7)">
+      Happy Birthday,
+      <span class="block mt-4 text-purple-200">
+        Sangam 🎀✨
+      </span>
+      <span class="block mt-3 text-2xl md:text-4xl">
+        My Motu ✨💕
+      </span>
+    </h1>
+
+    <p class="mt-7 text-lg md:text-2xl font-semibold">
+      My Special One, you make life more beautiful. 💜
+    </p>
+
+    <p class="mt-3 text-purple-200">
+      A little world of memories, just for you.
+    </p>
+
+    <div id="countdown" class="mt-8 text-xl md:text-3xl font-semibold">
+      🎂 Sending you a million birthday wishes! 💕
+    </div>
+
+    <p class="mt-8 text-lg">With love, Anny 💌</p>
+
+    <a href="#letter"
+      class="inline-block mt-7 px-7 py-3 rounded-full font-semibold text-purple-950 bg-purple-200 hover:bg-white transition">
+      Open Your Surprise 💜 ↓
+    </a>
+  </div>
+</header>
+
+<main class="container mx-auto p-5 md:p-12">
+
+  <!-- SECTION 2: LETTER -->
+  <section id="letter" class="my-16 md:my-24 max-w-3xl mx-auto text-center"
+    data-aos="fade-up">
+
+    <p class="text-purple-300 text-lg mb-3">💌 A little letter from Anny</p>
+
+    <h2 class="text-3xl md:text-5xl font-anime text-sakura mb-8">
+      A Special Message For You
+    </h2>
+
+    <div class="dream-card p-6 md:p-10 rounded-3xl text-left text-base md:text-lg leading-relaxed space-y-5">
+
+      <p class="text-xl font-semibold text-purple-200">
+        🎀✨ Hey Sangam, My Special One! ✨💕
+      </p>
+
+      <p>
+        Happy Birthday to my favourite person, my little Motu! 🥹🎂💗
+      </p>
+
+      <p>
+        Kabhi-kabhi Motu 🤭💕, but always someone very special to my heart. 🫶🏻✨
+        I hope your birthday brings you all the happiness, love, and beautiful
+        moments you truly deserve. May all your dreams come true, may your smile
+        never fade, and may life always give you countless reasons to be happy. 🌷🎀
+      </p>
+
+      <p>
+        You are one of those people who make life a little more beautiful just
+        by being in it. 🥹💖 I hope you always stay the same cute, crazy, and
+        wonderful person you are. Never stop smiling, never stop dreaming,
+        and never forget how special you are. 🫂✨
+      </p>
+
+      <p>
+        And haan, mere Motu, hamesha khush rehna, apna khayal rakhna,
+        aur apni cute si smile kabhi mat khona. 😭💕 Tumhari life mein itni
+        khushiyan aayein ki tumhe kabhi udaas hone ka mauka hi na mile. 🎀💫
+      </p>
+
+      <p>
+        No matter how much I tease you, you will always have a special
+        place in my heart. 💗🧿
+      </p>
+
+      <p class="text-xl font-semibold text-purple-200">
+        Happy Birthday, Sangam! 🎂🎉🎀
+      </p>
+
+      <p>
+        Stay blessed, stay cute, and keep shining, my special one. ✨💕🫶🏻
+      </p>
+
+      <p class="text-right pt-5 text-purple-200 font-semibold">
+        Forever sending you love,<br>
+        Anny 💜🎀
+      </p>
+    </div>
+  </section>
+
+  <!-- SECTION 3: TIMELINE -->
+  <section class="my-16 md:my-24">
+    <h2 class="text-3xl md:text-5xl font-anime text-center mb-5"
+      data-aos="fade-up">
+      Your Story Arc 🌙
+    </h2>
+
+    <p class="text-center text-purple-200 mb-12">
+      Every memory has its own little magic. ✨
+    </p>
+
+    <div class="space-y-16">
+
+      <div class="flex flex-col md:flex-row items-center gap-8"
+        data-aos="fade-right">
+        <img src="img/img1.png" alt="Anny and Sangam memory 1"
+          class="dream-photo w-full md:w-1/2 rounded-2xl shadow-xl">
+        <div class="text-center md:text-left">
+          <h3 class="text-2xl font-anime text-sakura">The Beginning 🎀</h3>
+          <p class="mt-3 text-lg">Every special story starts somewhere. 💜</p>
+          <p class="mt-2 text-purple-200">Our little memory, forever treasured.</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col md:flex-row-reverse items-center gap-8"
+        data-aos="fade-left">
+        <img src="img/img2.png" alt="Anny and Sangam memory 2"
+          class="dream-photo w-full md:w-1/2 rounded-2xl shadow-xl">
+        <div class="text-center md:text-right">
+          <h3 class="text-2xl font-anime text-sakura">Little Moments 💕</h3>
+          <p class="mt-3 text-lg">The smallest moments can become the biggest memories.</p>
+          <p class="mt-2 text-purple-200">And this one is ours. 🫶🏻</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col md:flex-row items-center gap-8"
+        data-aos="fade-right">
+        <img src="img/img3.png" alt="Anny and Sangam memory 3"
+          class="dream-photo w-full md:w-1/2 rounded-2xl shadow-xl">
+        <div class="text-center md:text-left">
+          <h3 class="text-2xl font-anime text-sakura">A Little Happiness 🌷</h3>
+          <p class="mt-3 text-lg">Some people make ordinary days feel special.</p>
+          <p class="mt-2 text-purple-200">You are one of those people, Sangam. 💜</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col md:flex-row-reverse items-center gap-8"
+        data-aos="fade-left">
+        <img src="img/img4.png" alt="Anny and Sangam memory 4"
+          class="dream-photo w-full md:w-1/2 rounded-2xl shadow-xl">
+        <div class="text-center md:text-right">
+          <h3 class="text-2xl font-anime text-sakura">More Memories Ahead ✨</h3>
+          <p class="mt-3 text-lg">This is only one chapter of a story full of memories.</p>
+          <p class="mt-2 text-purple-200">May life bring you endless happy moments. 🎀</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION 4: HALL OF FAME -->
+  <section class="my-16 md:my-24">
+    <h2 class="text-3xl md:text-5xl font-anime text-center mb-5"
+      data-aos="fade-up">
+      Hall of Fame 💜
+    </h2>
+
+    <p class="text-center text-purple-200 mb-12">
+      Six little frames of someone very special. 🎀
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <div class="dream-card p-4 rounded-2xl text-center" data-aos="fade-up">
+        <img src="img/image1.png" alt="Sangam memory 1"
+          class="dream-photo w-full h-80 object-cover rounded-xl mb-4">
+        <h3 class="text-xl font-anime text-sakura">Our Favourite Memory 💕</h3>
+        <p class="mt-2">A moment worth remembering. ✨</p>
+      </div>
+
+      <div class="dream-card p-4 rounded-2xl text-center" data-aos="fade-up" data-aos-delay="100">
+        <img src="img/image2.png" alt="Sangam memory 2"
+          class="dream-photo w-full h-80 object-cover rounded-xl mb-4">
+        <h3 class="text-xl font-anime text-sakura">That Cute Smile 🎀</h3>
+        <p class="mt-2">Never lose that beautiful smile. 💜</p>
+      </div>
+
+      <div class="dream-card p-4 rounded-2xl text-center" data-aos="fade-up" data-aos-delay="200">
+        <img src="img/image3.png" alt="Sangam memory 3"
+          class="dream-photo w-full h-80 object-cover rounded-xl mb-4">
+        <h3 class="text-xl font-anime text-sakura">Pure Happiness 🌷</h3>
+        <p class="mt-2">A little moment, a big memory.</p>
+      </div>
+
+      <div class="dream-card p-4 rounded-2xl text-center" data-aos="fade-up">
+        <img src="img/image4.png" alt="Sangam memory 4"
+          class="dream-photo w-full h-80 object-cover rounded-xl mb-4">
+        <h3 class="text-xl font-anime text-sakura">My Special One 🫶🏻</h3>
+        <p class="mt-2">Always someone worth celebrating.</p>
+      </div>
+
+      <div class="dream-card p-4 rounded-2xl text-center" data-aos="fade-up" data-aos-delay="100">
+        <img src="img/image5.png" alt="Sangam memory 5"
+          class="dream-photo w-full h-80 object-cover rounded-xl mb-4">
+        <h3 class="text-xl font-anime text-sakura">A Precious Memory ✨</h3>
+        <p class="mt-2">Saved in pictures, treasured in the heart.</p>
+      </div>
+
+      <div class="dream-card p-4 rounded-2xl text-center" data-aos="fade-up" data-aos-delay="200">
+        <img src="img/image6.png" alt="Sangam memory 6"
+          class="dream-photo w-full h-80 object-cover rounded-xl mb-4">
+        <h3 class="text-xl font-anime text-sakura">Forever Special 💜</h3>
+        <p class="mt-2">Happy birthday to my favourite Motu! 🎂</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION 5: GALLERY -->
+  <section class="my-16 md:my-24">
+    <h2 class="text-3xl md:text-5xl font-anime text-center mb-5"
+      data-aos="fade-up">
+      Our Dreamy Gallery 📸
+    </h2>
+
+    <p class="text-center text-purple-200 mb-12">
+      15 little windows into beautiful memories. 💜🎀
+    </p>
+
+    <div id="lightgallery"
+      class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+
+      <a href="img/1.png" data-aos="zoom-in" class="block h-48 md:h-64">
+        <img src="img/1.png" alt="Memory 1" class="gallery-photo dream-photo rounded-xl">
+      </a>
+      <a href="img/2.png" data-aos="zoom-in" class="block h-48 md:h-64">
+        <img src="img/2.png" alt="Memory 2" class="gallery-photo dream-photo rounded-xl">
+      </a>
+      <a href="img/3.png" data-aos="zoom-in" class="block h-48 md:h-64">
+        <img src="img/3.png" alt="Memory 3" class="gallery-photo dream-photo rounded-xl">
+      </a>
+      <a href="img/4.png" data-aos="zoom-in" class="block h-48 md:h-64">
+        <img src="img/4.png" alt="Memory 4" class="gallery-photo dream-photo rounded-xl">
+      </a>
+      <a href="img/5.png" data-aos="zoom-in" class="block h-48 md:h-64">
+        <img src="img/5.png" alt="Memory 5" class="gallery-photo dream-photo rounded-xl">
+      </a>
+      <a href="img/6.png" data-aos="zoom-in" class="block h-48 md:h-64">
+        <img src="img/6.png" alt="Memory 6" class="gallery-photo dream-photo rounded-xl">
+      </a>
+      <a href="img/7.png" data-aos="zoom-in" class="block h-48 md:h-64">
+        <img src="img/7.png" alt="Memory 7" class="gallery-photo dream-photo rounded-xl">
+      </a>
+      <a href="img/8.png" data-aos="zoom-in" class="block h-48 md:h-64">
+        <img src="img/8.png" alt="Memory 8" class="gallery-photo dream-photo rounded-xl">
+      </a>
+      <a href="img/9.png" data-aos="zoom-in" class="block h-48 md:h-64">
+        <img src="img/9.png" alt="Memory 9" class="gallery-photo dream-photo rounded-xl">
+      </a>
+      <a href="img/10.png" data-aos="zoom-in" class="block h-48 md:h-64">
+        <img src="img/10.png" alt="Memory 10" class="gallery-photo dream-photo rounded-xl">
+      </a>
+      <a href="img/11.png" data-aos="zoom-in" class="block h-48 md:h-64">
+        <img src="img/11.png" alt="Memory 11" class="gallery-photo dream-photo rounded-xl">
+      </a>
+      <a href="img/12.png" data-aos="zoom-in" class="block h-48 md:h-64">
+        <img src="img/12.png" alt="Memory 12" class="gallery-photo dream-photo rounded-xl">
+      </a>
+      <a href="img/13.png" data-aos="zoom-in" class="block h-48 md:h-64">
+        <img src="img/13.png" alt="Memory 13" class="gallery-photo dream-photo rounded-xl">
+      </a>
+      <a href="img/14.png" data-aos="zoom-in" class="block h-48 md:h-64">
+        <img src="img/14.png" alt="Memory 14" class="gallery-photo dream-photo rounded-xl">
+      </a>
+      <a href="img/15.png" data-aos="zoom-in" class="block h-48 md:h-64">
+        <img src="img/15.png" alt="Memory 15" class="gallery-photo dream-photo rounded-xl">
+      </a>
+
+    </div>
+  </section>
+
+  <!-- SECTION 6: FINALE -->
+  <section class="my-16 md:my-24" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto rounded-3xl shadow-2xl overflow-hidden bg-navy p-8 md:p-14 text-center">
+
+      <p class="text-5xl mb-6">🎂🎀💜</p>
+
+      <h2 class="text-3xl md:text-5xl font-anime text-sakura mb-8">
+        Happy Birthday, Sangam!
+      </h2>
+
+      <p class="text-lg md:text-xl leading-relaxed">
+        Dear Motu, I hope this new chapter of your life is filled
+        with laughter, love, beautiful surprises, and dreams coming true.
+        Keep shining in your own magical way. ✨
+      </p>
+
+      <p class="mt-6 text-lg text-purple-200">
+        You will always be my special one. 🫶🏻
+      </p>
+
+      <p class="mt-8 text-2xl font-anime text-sakura">
+        Forever your well-wisher, Anny 💌
+      </p>
+
+      <p class="mt-6 text-2xl">🌷 💜 🌷</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-navy text-white p-8 text-center">
+  <p class="text-lg">Made with love, just for Sangam. 💜</p>
+  <p class="text-sm opacity-80 mt-3">
+    Happy Birthday, my special one! 🎀✨
+  </p>
+  <p class="text-sm text-purple-200 mt-2">
+    From Anny, with love 🫶🏻
+  </p>
+</footer>
+
+<!-- ANIMATION LIBRARIES -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
