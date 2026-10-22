@@ -53,9 +53,24 @@
 
 <!-- SECTION 1: HERO -->
 <header class="min-h-screen h-screen relative flex items-center justify-center text-white overflow-hidden">
-  <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover" style="z-index:0">
-    <source src="img/sa.mp4" type="video/mp4">
-  </video>
+  
+  <div class="absolute inset-0 grid grid-cols-1 md:grid-cols-2 gap-2 p-2" style="z-index:0">
+    <iframe
+      class="w-full h-full rounded-xl"
+      src="https://www.youtube.com/embed/NAOW8E39seA"
+      title="Sangam Birthday Video 1"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+    <iframe
+      class="w-full h-full rounded-xl"
+      src="https://www.youtube.com/embed/LjcADQvy0C0"
+      title="Sangam Birthday Video 2"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+  
   <div class="absolute inset-0" style="background:linear-gradient(135deg,rgba(22,11,46,.75),rgba(76,29,149,.55));z-index:1"></div>
   <div class="text-center relative p-5" style="z-index:2" data-aos="fade-in" data-aos-duration="1500">
     <p class="text-xl md:text-2xl mb-5 text-purple-200">🎀 A little surprise made with love 🎀</p>
